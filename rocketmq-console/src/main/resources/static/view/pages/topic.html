@@ -30,12 +30,12 @@
                 </md-checkbox>
                 <md-checkbox aria-label="Checkbox" ng-model="filterSystem" class="md-primary">{{'SYSTEM' | translate}}
                 </md-checkbox>
-                <button class="btn btn-raised btn-sm btn-primary" type="button" ng-click="openAddDialog()">{{'ADD' |
+                <!-- <button class="btn btn-raised btn-sm btn-primary" type="button" ng-click="openAddDialog()">{{'ADD' |
                     translate}}/ {{'UPDATE' | translate}}
                 </button>
                 <button class="btn btn-raised btn-sm btn-primary" type="button" ng-click="refreshTopicList()">
                     {{'REFRESH' | translate}}
-                </button>
+                </button> -->
             </form>
         </div>
         <br>
@@ -63,7 +63,7 @@
                             <button class="btn btn-raised btn-sm btn-primary" type="button"
                                     ng-click="openUpdateDialog(topic, sysFlag)">topic {{'CONFIG' |translate}}
                             </button>
-                            <button class="btn btn-raised btn-sm btn-primary" type="button"
+                            <!-- <button class="btn btn-raised btn-sm btn-primary" type="button"
                                     ng-show="{{!sysFlag}}"
                                     ng-click="openSendTopicMessageDialog(topic)">{{'SEND_MSG' | translate}}
                             </button>
@@ -75,7 +75,7 @@
                                     ng-show="{{!sysFlag}}"
                                     ng-confirm-click="Are you sure to delete?"
                                     confirmed-click="deleteTopic(topic)">{{'DELETE' | translate}}
-                            </button>
+                            </button> -->
                         </td>
                     </tr>
                 </table>
@@ -181,7 +181,7 @@
                 <div class="col-sm-10">
                     <input class="form-control" ng-model="item.topicName" type="text"
                            ng-disabled="ngDialogData.bIsUpdate" required/>
-                    <span class="text-danger" ng-show="addAppForm.name.$error.required">编号不能为空.</span>
+                    <span class="text-danger" ng-show="addAppForm.name.$error.required">缂栧彿涓嶈兘涓虹┖.</span>
                 </div>
             </div>
             <div class="form-group">
@@ -189,7 +189,7 @@
                 <div class="col-sm-10">
                     <input class="form-control" ng-model="item.writeQueueNums" type="text"
                            required/>
-                    <span class="text-danger" ng-show="addAppForm.name.$error.required">编号不能为空.</span>
+                    <span class="text-danger" ng-show="addAppForm.name.$error.required">缂栧彿涓嶈兘涓虹┖.</span>
                 </div>
             </div>
             <div class="form-group">
@@ -197,7 +197,7 @@
                 <div class="col-sm-10">
                     <input class="form-control" ng-model="item.readQueueNums" type="text"
                            required/>
-                    <span class="text-danger" ng-show="addAppForm.name.$error.required">编号不能为空.</span>
+                    <span class="text-danger" ng-show="addAppForm.name.$error.required">缂栧彿涓嶈兘涓虹┖.</span>
                 </div>
             </div>
             <div class="form-group">
@@ -205,7 +205,7 @@
                 <div class="col-sm-10">
                     <input class="form-control" ng-model="item.perm" type="text"
                            required/>
-                    <span class="text-danger" ng-show="addAppForm.name.$error.required">编号不能为空.</span>
+                    <span class="text-danger" ng-show="addAppForm.name.$error.required">缂栧彿涓嶈兘涓虹┖.</span>
                 </div>
             </div>
         </form>
@@ -358,7 +358,7 @@
         </div>
     </div>
 </script>
-<!--路由查看窗口-->
+<!--璺敱鏌ョ湅绐楀彛-->
 <script type="text/ng-template" id="routerViewDialog">
     <div class="modal-header">
         <h4 class="modal-title"> {{ngDialogData.topic}}{{'ROUTER' | translate}}</h4>
@@ -430,7 +430,7 @@
 
 </script>
 
-<!--删除主题窗口-->
+<!--鍒犻櫎涓婚绐楀彛-->
 <script type="text/ng-template" id="deleteTopicDialog">
     <div>
         <div>
@@ -453,7 +453,7 @@
     </div>
 </script>
 
-<!--发送自定义消息窗口-->
+<!--鍙戦�佽嚜瀹氫箟娑堟伅绐楀彛-->
 <script type="text/ng-template" id="sendTopicMessageDialog">
 
     <div class="modal-header">
